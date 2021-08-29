@@ -12,8 +12,8 @@ public class Codifica20103332 implements Codifica {
         return "20103332-1";
     }
 
-    @Override
     // Soma 2 ao codigo de cada caractere
+    @Override
     public String codifica(String str) {
         StringBuilder out = new StringBuilder();
 
@@ -25,8 +25,8 @@ public class Codifica20103332 implements Codifica {
         return out.toString();
     }
 
-    @Override
     // Subtrai 2 do codigo de cada caractere
+    @Override
     public String decodifica(String str) {
         StringBuilder out = new StringBuilder();
 
