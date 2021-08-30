@@ -11,9 +11,9 @@ public class Codifica161800917 implements Codifica {
             if (!Character.isLetterOrDigit(s)) {
                 codificada += s;
             } else {
-                for (int i = 0; i < tabela.length(); i++) {
-                    if (tabela.charAt(i) == s) {
-                        codificada += tabela.charAt(i + deslc);
+                for (int i = 0; i < ALFABETO.length(); i++) {
+                    if (ALFABETO.charAt(i) == s) {
+                        codificada += ALFABETO.charAt(i + KEY);
                     }
                 }
             }
@@ -28,9 +28,9 @@ public class Codifica161800917 implements Codifica {
             if (!Character.isLetterOrDigit(s)) {
                 decodificada += s;
             } else {
-                for (int i = 0; i < tabela.length(); i++) {
-                    if (tabela.charAt(i) == s) {
-                        decodificada += tabela.charAt(i - deslc);
+                for (int i = 0; i < ALFABETO.length(); i++) {
+                    if (ALFABETO.charAt(i) == s) {
+                        decodificada += ALFABETO.charAt(i - KEY);
                     }
                 }
             }
