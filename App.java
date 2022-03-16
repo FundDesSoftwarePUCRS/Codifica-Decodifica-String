@@ -7,7 +7,6 @@ import java.nio.file.Path;
 import java.util.List;
 
 import Codificadores.Codifica;
-import Codificadores.Codifica2010;
 
 public class App {
     public static void executaCodificacao(Codifica cod, String frase) {
