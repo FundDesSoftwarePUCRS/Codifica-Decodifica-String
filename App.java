@@ -14,6 +14,7 @@ public class App {
         System.out.println("Nome: " + cod.getNomeAutor());
         System.out.println("Matricula: " + cod.getMatriculaAutor());
         System.out.println("Frase original: " + frase);
+        System.out.println("Shift: " + Codifica2010.deslc);
         String codificada = cod.codifica(frase);
         System.out.println("Frase codificada: " + codificada);
         String decodificada = cod.decodifica(codificada);
@@ -26,6 +27,8 @@ public class App {
         Path filesPath = Paths.get("Codificadores");
         System.out.println("Pasta:"+filesPath.toAbsolutePath());
         List<String> codificadores = null;
+
+        executaCodificacao(new Codifica2010(), "xyz");
 
         try (Stream<Path> walk = Files.walk(filesPath)) {
             codificadores = walk
