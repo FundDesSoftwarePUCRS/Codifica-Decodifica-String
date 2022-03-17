@@ -26,15 +26,14 @@ public class App {
         System.out.println("Pasta:"+filesPath.toAbsolutePath());
         List<String> codificadores = null;
 
-
         try (Stream<Path> walk = Files.walk(filesPath)) {
             codificadores = walk
-                .map(x -> x.getFileName())
-                .map(x -> x.toString())
-                .filter(f -> !f.equals("Codifica.class"))
-                .filter(f -> f.endsWith(".class"))
-                .map(s -> s.toString().substring(0, s.lastIndexOf('.')))
-                .collect(Collectors.toList());
+                    .map(x -> x.getFileName())
+                    .map(x -> x.toString())
+                    .filter(f -> !f.equals("Codifica.class"))
+                    .filter(f -> f.endsWith(".class"))
+                    .map(s -> s.toString().substring(0, s.lastIndexOf('.')))
+                    .collect(Collectors.toList());
 
             codificadores.forEach(fn -> System.out.println(fn));
 
