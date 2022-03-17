@@ -1,8 +1,6 @@
 package Codificadores;
 
 public class Codifica20107532 implements Codifica{
-    private static String consoantes = "BCDEFGHIJ";
-    private static String vogais = "AEIOU";
 
     @Override
     public String decodifica(String str) {
