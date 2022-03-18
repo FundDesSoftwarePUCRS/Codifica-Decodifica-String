@@ -1,11 +1,10 @@
 package Codificadores;
 
-//Mudanças:
-// deslc foi de 2 para 3
-// mudei a posição dos chars na tabela
-public class Codifica20280524 implements Codifica {
-    private static String tabela = "1234567890abcdefghijklmnopqrstuvwxyzXYZWVUTSRQPOMNOLQRSTUVWXYZ@#";
-    private static int deslc = 3;
+//Mudei a tabela utilizada e o valor de desloc para 4
+
+public class Codifica20102577 implements Codifica {
+    private static String tabela = "zyxwvutsrqponmlkjihgfedcba1234567890@#ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    private static int deslc = 4;
 
     @Override
     public String codifica(String str) {
@@ -41,13 +40,14 @@ public class Codifica20280524 implements Codifica {
         return decodificada;
     }
 
-      @Override
-    public String getNomeAutor() {
-        return "Leonardo Gibrowski Faé";
+    @Override
+    public String getMatriculaAutor() {
+        return "20102577";
     }
 
     @Override
-    public String getMatriculaAutor() {
-        return "20280524";
+    public String getNomeAutor() {
+        return "Bruno Avellar";
     }
+
 }
