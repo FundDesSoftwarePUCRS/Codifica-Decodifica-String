@@ -3,7 +3,7 @@ package Codificadores;
 public class Codifica18106193 implements Codifica{
 
     private String tabela = "zyxwvutsrqponmlkjihgfedcba1234567890@#ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    private int desloc = 4;
+    private int desloc = 6;
 
     @Override
     public String getNomeAutor(){
