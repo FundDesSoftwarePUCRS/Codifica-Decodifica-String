@@ -2,8 +2,8 @@ package Codificadores;
 
 public class Codifica18106193 implements Codifica{
 
-    private static String tabela = "XYZWVUTSRQPOMNOLQRSTUVWXYZ1234567890abcdefghijklmnopqrstuvwxyz@#";
-    private int desloc = 3;
+    private String tabela = "zyxwvutsrqponmlkjihgfedcba1234567890@#ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    private int desloc = 4;
 
     @Override
     public String getNomeAutor(){
@@ -16,15 +16,16 @@ public class Codifica18106193 implements Codifica{
     }
 
     public String codifica(String str){
-        String codificada ="";
+        String codificada = " ";
 
-        for (char c : str.toCharArray()){
-            if(!Character.isLetterOrDigit(c)){
-                codificada += c;
+        for (char s : str.toCharArray()){
+            if(!Character.isLetterOrDigit(s)){
+                codificada += s;
             }else{
-                for(int i = 0; i<=tabela.length(); i++){
-                    if(tabela.charAt(i)==c){
-                        codificada+=tabela.charAt(i+desloc);
+                for(int i = 0; i<tabela.length(); i++)
+                {
+                    if(tabela.charAt(i)==s){
+                        codificada += tabela.charAt(i + desloc);
                     }
                 }
             }
@@ -33,12 +34,12 @@ public class Codifica18106193 implements Codifica{
     }
     public String decodifica(String str){
         String decodificada = "";
-        for(char c : str.toCharArray()){
-            if(!Character.isLetterOrDigit(c)){
-                decodificada+=c;
+        for(char s : str.toCharArray()){
+            if(!Character.isLetterOrDigit(s)){
+                decodificada+=s;
             }else{
-                for(int i = 0; i<=tabela.length(); i++){
-                    if(tabela.charAt(i)==c){
+                for(int i = 0; i<tabela.length(); i++){
+                    if(tabela.charAt(i)==s){
                         decodificada+= tabela.charAt(i-desloc);
                     }
                 }
