@@ -6,6 +6,7 @@ public class Codifica20204015 implements Codifica {
 
     @Override
     public String codifica(String str) {
+        /*
         String codificada = "";
         for (char s : str.toCharArray()) {
             if (!Character.isLetterOrDigit(s)) {
@@ -18,11 +19,13 @@ public class Codifica20204015 implements Codifica {
                 }
             }
         }
-        return codificada;
+        return codificada;*/
+        return "Bug";
     }
 
     @Override
     public String decodifica(String str) {
+        /*
         String decodificada = "";
         for (char s : str.toCharArray()) {
             if (!Character.isLetterOrDigit(s)) {
@@ -36,6 +39,8 @@ public class Codifica20204015 implements Codifica {
             }
         }
         return decodificada;
+        */
+        return("Bug");
     }
 
     @Override
