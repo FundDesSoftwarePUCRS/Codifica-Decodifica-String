@@ -4,7 +4,10 @@ public class Codifica202040242 implements Codifica {
 
     @Override
     public String codifica(String str) {
-        //fazer um codificador
+        for (int i =0;i<str.length();i++){
+        str.charAt(i);
+          
+        }
         return null;
     }
 
