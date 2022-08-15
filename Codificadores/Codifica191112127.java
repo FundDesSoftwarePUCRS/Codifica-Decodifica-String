@@ -4,26 +4,22 @@ public class Codifica191112127 implements Codifica {
 
     @Override
     public String getNomeAutor() {
-        // TODO Auto-generated method stub
-        return null;
+        return "Daniele Paz";
     }
 
     @Override
     public String getMatriculaAutor() {
-        // TODO Auto-generated method stub
-        return null;
+        return "19111212-7";
     }
 
     @Override
     public String codifica(String str) {
-        // TODO Auto-generated method stub
-        return null;
+        return "°˖✧ "+str+" ✧˖°";
     }
 
     @Override
     public String decodifica(String str) {
-        // TODO Auto-generated method stub
-        return null;
+        return str.substring(4, str.length() - 4);
     }
 
 }
