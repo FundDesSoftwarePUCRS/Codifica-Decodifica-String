@@ -42,7 +42,7 @@ public class App {
             return;
         }
 
-        String frase = "Hoje e dia 17 de marco de 2022";
+        String frase = "Hoje e dia 15 de agosto de 2022";
         try {
             for (String cod : codificadores) {
                 System.out.println(cod);

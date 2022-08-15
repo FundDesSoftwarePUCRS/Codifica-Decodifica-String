@@ -1,4 +1,4 @@
-package Codificadores;
+/*package Codificadores;
 
 public class Codifica151051836 implements Codifica {
 
@@ -22,3 +22,4 @@ public class Codifica151051836 implements Codifica {
         return "Rafael Copstein";
     }
 }
+*/
