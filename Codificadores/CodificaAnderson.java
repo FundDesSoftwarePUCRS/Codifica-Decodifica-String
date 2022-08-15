@@ -14,11 +14,11 @@ public class CodificaAnderson implements Codifica {
 
     @Override
     public String codifica(String str) {
-        return "@@@@@" + str + "!!!!!";
+        return "@@@@@@" + str + "!!!!!!";
     }
 
     @Override
     public String decodifica(String str) {
-        return str.substring(5, str.length() - 5);
+        return str.substring(6, str.length() - 6);
     }
 }
