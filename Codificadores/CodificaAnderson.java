@@ -4,7 +4,7 @@ public class CodificaAnderson implements Codifica {
 
     @Override
     public String getNomeAutor() {
-        return "Anderson Fajardo"
+        return "Anderson Fajardo";
     }
 
     @Override
