@@ -4,17 +4,20 @@ public class Codifica202040242 implements Codifica {
 
     @Override
     public String codifica(String str) {
+        String aux=str;
         for (int i =0;i<str.length();i++){
-        str.charAt(i);
-          
+         aux+=(char)str.charAt(i)+2;
         }
-        return null;
+        return aux;
     }
 
     @Override
     public String decodifica(String str) {
-        //fazer um decodificador
-        return null;
+        String aux=str;
+        for (int i =0;i<str.length();i++){
+         aux+=(char)str.charAt(i)-2;
+        }
+        return aux;
     }
 
     @Override
