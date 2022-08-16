@@ -1,7 +1,7 @@
 
 package Codificadores;
 
-public class Codifica21100652-3 implements Codifica {
+public class Codifica211006523 implements Codifica {
     @Override
     public String getNomeAutor() {
         return "Gustavo Sanford Bortolon";

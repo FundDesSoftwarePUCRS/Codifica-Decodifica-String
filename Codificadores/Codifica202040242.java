@@ -1,7 +1,7 @@
 package Codificadores;
 
 public class Codifica202040242 implements Codifica {
-
+    
     @Override
     public String codifica(String str) {
         String aux="";

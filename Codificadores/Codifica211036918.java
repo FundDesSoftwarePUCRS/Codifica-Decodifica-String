@@ -2,7 +2,7 @@ package Codificadores;
 
 
 import java.util.*;
-public class Codifica21103691 implements Codifica
+public class Codifica211036918 implements Codifica
 {
 
     
