@@ -16,7 +16,13 @@ return str;
 
 @Override
 public String decodifica(String str) {
-return str.substring(str.length() - s);
+int j=0;
+for(int i=0;i<str.length();i++){
+if (str.charAt(i)=='$'){
+j++;
+}
+}
+return str.substring(0,str.length() - j);
 }
 
 @Override
