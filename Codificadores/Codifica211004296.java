@@ -1,24 +1,24 @@
 package Codificadores;
 
-public class Codifica151051836 implements Codifica {
+public class Codifica211004296 implements Codifica {
 
     @Override
     public String codifica(String str) {
-        return "<<" + str + ">>>";
+        return "cachorro longo" + str + "programacao orientada a dados";
     }
 
     @Override
     public String decodifica(String str) {
-        return str.substring(2, str.length() - 3);
+        return str.substring(14, str.length() - 29);
     }
 
     @Override
     public String getMatriculaAutor() {
-        return "15105183-6";
+        return "21100429-6";
     }
 
     @Override
     public String getNomeAutor() {
-        return "Rafael Copstein";
+        return "Eduardo Tropea";
     }
 }
