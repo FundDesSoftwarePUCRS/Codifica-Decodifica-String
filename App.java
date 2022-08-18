@@ -7,6 +7,7 @@ import java.nio.file.Path;
 import java.util.List;
 
 import Codificadores.Codifica;
+import Codificadores.Codifica211010749;
 
 public class App {
     public static void executaCodificacao(Codifica cod, String frase) {
@@ -54,5 +55,6 @@ public class App {
             e.printStackTrace();
             return;
         }
+        executaCodificacao(new Codifica211010749(), frase);
     }
 }
