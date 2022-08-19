@@ -4,12 +4,12 @@ public class Codifica211010749 implements Codifica {
 
     @Override
     public String codifica(String str) {
-        return "૮ ̷ ̷ ̷・"+ str + "ﻌ ̷ ̷・ ა";
+        return "૮ ̷ ̷ ̷・ "+ str + " ﻌ ̷ ̷・  ";  
     }
 
     @Override
     public String decodifica(String str) {
-        return str.substring(8, str.length() - 8);
+        return str.substring(14, str.length() - 14);
     }
 
     @Override

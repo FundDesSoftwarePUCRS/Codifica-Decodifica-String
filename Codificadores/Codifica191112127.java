@@ -19,7 +19,7 @@ public class Codifica191112127 implements Codifica {
 
     @Override
     public String decodifica(String str) {
-        return str.substring(4, str.length() - 4);
+        return str.substring(8, str.length() - 8);
     }
 
 }
