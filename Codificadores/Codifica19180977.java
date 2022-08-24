@@ -8,7 +8,7 @@ public class Codifica19180977 implements Codifica{
     @Override
     public String getNomeAutor(){
 
-        return "Nicolas P. Salles";
+        return "Nicolas Paganotto Salles";
     }
 
     @Override
