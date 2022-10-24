@@ -9,12 +9,12 @@ public class Codifica201073152 implements Codifica {
 
     @Override
     public String codifica(String str) {
-        return "@_@" + str + "@_@";
+        return "@@@@@@" + str + "!!!!!!";
     }
 
     @Override
     public String decodifica(String str) {
-        return str.substring(3, str.length() - 3);
+        return str.substring(6, str.length() - 6);
     }
 
     @Override
@@ -22,3 +22,5 @@ public class Codifica201073152 implements Codifica {
         return "20107315-2";
     }
 }
+
+
