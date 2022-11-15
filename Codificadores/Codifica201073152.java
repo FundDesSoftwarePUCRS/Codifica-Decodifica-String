@@ -1,15 +1,10 @@
 package Codificadores;
 
-public class CodificaAnderson implements Codifica {
+public class Codifica201073152 implements Codifica {
 
     @Override
     public String getNomeAutor() {
-        return "Anderson Fajardo";
-    }
-
-    @Override
-    public String getMatriculaAutor() {
-        return "14201795-3";
+        return "Rafael Schaker";
     }
 
     @Override
@@ -21,4 +16,11 @@ public class CodificaAnderson implements Codifica {
     public String decodifica(String str) {
         return str.substring(6, str.length() - 6);
     }
+
+    @Override
+    public String getMatriculaAutor() {
+        return "20107315-2";
+    }
 }
+
+

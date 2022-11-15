@@ -7,7 +7,7 @@ import java.nio.file.Path;
 import java.util.List;
 
 import Codificadores.Codifica;
-import Codificadores.Codifica211010749;
+import Codificadores.Codifica201073152;
 
 public class App {
     public static void executaCodificacao(Codifica cod, String frase) {
@@ -36,14 +36,14 @@ public class App {
                 .map(s -> s.toString().substring(0, s.lastIndexOf('.')))
                 .collect(Collectors.toList());
 
-            codificadores.forEach(fn -> System.out.println(fn));
+            //codificadores.forEach(fn -> System.out.println(fn));
 
         } catch (IOException e) {
             e.printStackTrace();
             return;
         }
 
-        String frase = "Hoje e dia 17 de marco de 2022";
+        String frase = "Hoje e dia 24 de outubro de 2022";
         try {
             for (String cod : codificadores) {
                 System.out.println(cod);
@@ -55,6 +55,5 @@ public class App {
             e.printStackTrace();
             return;
         }
-        executaCodificacao(new Codifica211010749(), frase);
     }
 }
